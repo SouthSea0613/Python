@@ -1,0 +1,1 @@
+print(" ".join(word[::-1] for word in input("문자열 입력 : ").split()))
