@@ -1,6 +1,6 @@
 import random
 
-def create_random_list_simplified(number):
+def create_random_array_simplified(number):
     return random.sample(range(number), number)
 
 def is_sorted_simplified(array):
