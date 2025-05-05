@@ -1,21 +1,17 @@
 import random
 
-def create_random_list(n):
-    int_list = []
-    for _ in range(n):
+def create_random_array(number):
+    array = []
+    for _ in range(number):
         while True:
-            tmp = random.randint(0, 9)
-            if tmp not in int_list:
-                int_list.append(tmp)
+            tmp = random.randint(0, 99)
+            if tmp not in array:
+                array.append(tmp)
                 break
-    return int_list
+    return array
 
-def is_sorted(int_list):
-    for i in range(len(int_list) - 1):
-        if int_list[i] > int_list[i + 1]:
+def is_sorted(array):
+    for i in range(len(array) - 1):
+        if array[i] > array[i + 1]:
             return False
     return True
-
-a = create_random_list(2)
-print(a)
-print(is_sorted(a))
