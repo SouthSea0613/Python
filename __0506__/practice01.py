@@ -1,4 +1,8 @@
-import practice01_simplified
+import sys, os
+
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+
+from __0505__ import practice01_simplified
 
 def sort_array(array):
     for i in range(len(array) - 1):
