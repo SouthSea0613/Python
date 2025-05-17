@@ -6,11 +6,11 @@ from practice0505 import practice01_simplified
 
 def sort_array(array):
     for i in range(1, len(array)):
-        number = array[i]
+        tmp = array[i]
         for j in range(0, i):
-            if number < array[j]:
+            if tmp < array[j]:
                 array[j + 1:i + 1] = array[j:i]
-                array[j] = number
+                array[j] = tmp
                 break
     return array
 
