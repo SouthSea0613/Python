@@ -11,9 +11,9 @@ def random_num(num):
     return array
 
 def array_sort(array):
-        for i in range(len(array) - 1):
-            if array[i] > array[i+1]:
-                return False
-        return True
+    for i in range(len(array) - 1):
+        if array[i] > array[i+1]:
+            return False
+    return True
 
 print(array_sort(random_num(10)))
